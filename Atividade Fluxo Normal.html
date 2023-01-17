@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de fluxo relativo</title>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<style>     * {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+ }
+ div {
+   display: inline-block;
+   border: 2px solid #2e3d49;
+   width: 300px;
+   height: 50px;
+ }
+ div:nth-child(even) {
+   background-color: #02b3e4;
+ }
+ div:nth-child(odd) {
+   background-color: #ecc81a;
+ }
+ .shift {
+   /*position: relative;*/
+   top: 10px;
+   left: 10px;
+   
+  }
+  .relative {
+    position: relative;
+    bottom: 30px;
+    right: 40px;
+   }
+   </style>
+   </head>
+   <body>
+     <div>Eu sou uma div inline-block!</div>
+     <div class="shift">Eu sou uma div inline-block!</div>
+     <div>Eu sou uma div inline-block!</div>
+  </body>
+  </html>
