@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Loader in HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }  
+
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background: #eef5fe;
+      }
+
+      .wrapper {
+
+        display: flex;
+        column-gap: 10px;
+    }
+
+    .wrapper .dot {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #008ae6;
+    }
+
+    </style>
+</body>
+</html>
