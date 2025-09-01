@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Projetos Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .aurora-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            background-color: #111827;
+            overflow: hidden;
+        }
+        .aurora-background::before,
+        .aurora-background::after {
+            content: '';
+            position: absolute;
+            width: 50vw;
+            height: 50vw;
+            max-width: 600px;
+            max-height: 600px;
+            background-image: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0));
+            border-radius: 50%;
+            filter: blur(100px);
+            animation: move-aurora 20s infinite alternate;
+        }
+        .aurora-background::before {
+            top: -10%;
+            left: -10%;
+        }
+        .aurora-background::after {
+            bottom: -10%;
+            right: -10%;
+            background-image: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.3), rgba(139, 92, 246, 0));
+            animation-delay: -10s;
+        }
+        @keyframes move-aurora {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(40px, 60px) scale(1.2); }
+            100% { transform: translate(-40px, -60px) scale(1); }
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <div class="aurora-background"></div>
+
+    <div class="relative z-10 container mx-auto px-4 py-12">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white">
+                Portfólio de Projetos Web
+            </h1>
+            <p class="text-gray-400 mt-2">Uma coleção de experimentos e projetos em HTML e CSS.</p>
+        </header>
+
+        <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                    <iframe src="Adicionando Icones Personalizados.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Ícones Personalizados</h3>
+                    <a href="Adicionando Icones Personalizados.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Arquivo Estilizando Uma Imagem.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Estilizando Imagem</h3>
+                    <a href="Arquivo Estilizando Uma Imagem.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800 flex items-center justify-center">
+                     <p class="text-gray-500">Visualização indisponível</p>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Atividade 01</h3>
+                    <a href="Atividade 01.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Atividade Fluxo Normal.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Fluxo Normal</h3>
+                    <a href="Atividade Fluxo Normal.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Botão Estilizado Com Background.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Botão com Background</h3>
+                    <a href="Botão Estilizado Com Background.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Botão Estilizado Sem Background.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Botão sem Background</h3>
+                    <a href="Botão Estilizado Sem Background.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Botão.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Botão Simples</h3>
+                    <a href="Botão.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Centralizando Icones Personalizados.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Centralizando Ícones</h3>
+                    <a href="Centralizando Icones Personalizados.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Criando Imagens.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Criando Imagens</h3>
+                    <a href="Criando Imagens.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Criar Títulos.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Criar Títulos</h3>
+                    <a href="Criar Títulos.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Estilizando Fontes.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Estilizando Fontes</h3>
+                    <a href="Estilizando Fontes.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Fluxo De Trabalho.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Fluxo de Trabalho</h3>
+                    <a href="Fluxo De Trabalho.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Google Loader in HTML & CSS.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Google Loader</h3>
+                    <a href="Google Loader in HTML & CSS.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Inserindo Icones 002.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Inserindo Ícones</h3>
+                    <a href="Inserindo Icones 002.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Listas.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Listas</h3>
+                    <a href="Listas.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Loading Spinner.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Loading Spinner</h3>
+                    <a href="Loading Spinner.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Search Bar in HTML & CSS.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Barra de Pesquisa</h3>
+                    <a href="Search Bar in HTML & CSS.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Slacker Card.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Slacker Card</h3>
+                    <a href="Slacker Card.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Style the Font Quiz.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Quiz de Fonte</h3>
+                    <a href="Style the Font Quiz.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Toggle Dark-Light Mode in HTML & CSS.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Toggle Dark/Light</h3>
+                    <a href="Toggle Dark-Light Mode in HTML & CSS.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+             <!-- Card do Projeto -->
+            <div class="glass-effect rounded-2xl overflow-hidden group transition-all duration-300 hover:scale-105 hover:border-blue-400/50">
+                <div class="w-full h-56 bg-gray-800">
+                     <iframe src="Usando Atributos.html" class="w-full h-full" sandbox></iframe>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold text-white truncate">Usando Atributos</h3>
+                    <a href="Usando Atributos.html" target="_blank" class="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                        Ver Projeto
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="text-center mt-12 pt-8 border-t border-white/10">
+            <p class="text-gray-500">Desenvolvido com Tailwind CSS e Lucide Icons.</p>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
